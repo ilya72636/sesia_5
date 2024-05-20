@@ -1,0 +1,74 @@
+.container {
+    width: 50%;
+    margin: auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.name {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.inputs .input {
+    margin-bottom: 15px;
+}
+
+.inputs p {
+    margin: 0;
+}
+
+.inputs input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.inputs .input-status {
+    font-size: 12px;
+    height: 20px;
+    margin-top: 5px;
+}
+
+
+
+#firstName:valid + .input-status::before,
+#lastName:valid + .input-status::before {
+    content: "Вы ввели правильное имя-фамилию ";
+    color: green;
+}
+
+#firstName:invalid + .input-status::before,
+#lastName:invalid + .input-status::before {
+    content: "Введите имя-фамилию как указано в подсказке";
+    color: red;
+}
+
+
+
+#phoneNumber:valid + .input-status::before {
+    content: "Вы ввели правильный номер";
+    color: green;
+}
+
+#phoneNumber:invalid + .input-status::before {
+    content: "Введите номер как указано в подсказке";
+    color: red;
+}
+
+
+#email:valid + .input-status::before {
+    content: "Вы ввели правильную почту ";
+    color: green;
+}
+
+#email:invalid + .input-status::before {
+    content: "Введите  почту как указано в подсказке";
+    color: red;
+}

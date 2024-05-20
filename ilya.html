@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ilya.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="name">
+            <h1>Форма заявок</h1>
+        </div>
+        <div class="inputs">
+            <div class="input">
+                <p>Введите своё имя</p>
+                <input type="text" id="firstName" required pattern="^[А-Яа-яЁё]+$" placeholder="Илья " title="только русские буквы">
+                <span class="input-status"></span>
+            </div>
+            <div class="input">
+                <p>Введите свою фамилию</p>
+                <input type="text" id="lastName" required pattern="^[А-Яа-яЁё]+$" placeholder="Хохулин"title="только русские буквы">
+                <span class="input-status"></span>
+            </div>
+            <div class="input">
+                <p>Введите свой номер телефона</p>
+                <input type="tel" id="phoneNumber" required pattern="\d+" placeholder="+996^^^^^^^44"title="только цифры">
+                <span class="input-status"></span>
+            </div>
+            <div class="input">
+                <p>Введите свою почту</p>
+                <input type="email" id="email" required placeholder="fdbdgghdf@gmail.com"title="только англиские  буквы">
+                <span class="input-status"></span>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+</body>
+</html>
